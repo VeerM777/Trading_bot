@@ -7,11 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_FILE_PATH = os.path.join(BASE_DIR, "trading_bot.log")
 
 def setup_logging(debug: bool = False) -> logging.Logger:
-    """
-    Sets up structured logging.
-    - Console logs are clean using Rich.
-    - File logs are detailed and written to trading_bot.log.
-    """
+    
     log_level = logging.DEBUG if debug else logging.INFO
 
     logger = logging.getLogger("trading_bot")

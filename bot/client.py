@@ -8,7 +8,6 @@ from bot.logging_config import logger
 
 
 class BinanceAPIError(Exception):
-    """Exception raised for Binance API specific errors."""
     def __init__(self, code: int, msg: str, status_code: int = 400):
         super().__init__(f"Binance API Error {code}: {msg} (HTTP {status_code})")
         self.code = code
@@ -22,10 +21,7 @@ class BinanceNetworkError(Exception):
 
 
 class BinanceFuturesClient:
-    """
-    Binance Futures Testnet (USDT-M) REST Client.
-    Handles signed requests, timestamp synchronization, and mock operations.
-    """
+
     BASE_URL = "https://testnet.binancefuture.com"
 
     def __init__(
@@ -57,10 +53,6 @@ class BinanceFuturesClient:
                 self.sync_time()
 
     def sync_time(self) -> None:
-        """
-        Fetches Binance server time and calculates drift offset to prevent
-        timestamp rejection errors caused by local clock skew.
-        """
         url = f"{self.BASE_URL}/fapi/v1/time"
         try:
             logger.debug(f"Syncing time with Binance server: {url}")
@@ -83,11 +75,9 @@ class BinanceFuturesClient:
             logger.warning(f"Network error during time sync: {e}. Using local time.")
 
     def get_server_timestamp(self) -> int:
-        """Returns the drift-compensated server timestamp in milliseconds."""
         return int(time.time() * 1000 + self.time_offset)
 
     def _sign_parameters(self, params: Dict[str, Any]) -> str:
-        """Generates an HMAC-SHA256 signature over the URL-encoded parameters."""
         query_string = urlencode(params)
         return hmac.new(
             self.api_secret.encode("utf-8"),
@@ -96,7 +86,6 @@ class BinanceFuturesClient:
         ).hexdigest()
 
     def request(self, method: str, endpoint: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-        """Sends a signed REST request to the Binance Futures Testnet."""
         if self.mock:
             return self._mock_request(method, endpoint, params)
 
@@ -139,8 +128,8 @@ class BinanceFuturesClient:
 
         return res_json
 
+    # Just incase if the API does not work 
     def _mock_request(self, method: str, endpoint: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-        """Simulates an HTTP REST request for dry-run (Mock Mode) execution."""
         params = params or {}
         logger.info(f"[cyan][MOCK API Request] {method} {self.BASE_URL}{endpoint}[/cyan]")
         logger.info(f"[cyan]Parameters: {params}[/cyan]")

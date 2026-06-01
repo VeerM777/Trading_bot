@@ -2,14 +2,10 @@ from typing import Dict, Any, Optional
 from bot.client import BinanceFuturesClient, BinanceAPIError, BinanceNetworkError
 from bot.logging_config import logger
 
-# Binance Futures Testnet limitation: conditional order types (STOP, STOP_MARKET,
-# TAKE_PROFIT, TAKE_PROFIT_MARKET) are not supported on /fapi/v1/order.
-# Error code -4120 is returned. This is a testnet restriction only.
 _TESTNET_CONDITIONAL_NOT_SUPPORTED = -4120
 
 
 class OrderManager:
-    """Manages order placement and formats parameters for the Binance client."""
 
     def __init__(self, client: BinanceFuturesClient):
         self.client = client
@@ -23,7 +19,6 @@ class OrderManager:
         price: Optional[float] = None,
         stop_price: Optional[float] = None
     ) -> Dict[str, Any]:
-        """Routes to the correct order method based on order type."""
         logger.info(
             f"Preparing {order_type} {side} order for {symbol} | Qty: {quantity} "
             f"{f'| Price: {price}' if price else ''} "
@@ -44,7 +39,6 @@ class OrderManager:
             raise
 
     def _place_market_order(self, symbol: str, side: str, quantity: float) -> Dict[str, Any]:
-        """Places a MARKET order."""
         params = {
             "symbol": symbol,
             "side": side,
@@ -54,7 +48,6 @@ class OrderManager:
         return self.client.request("POST", "/fapi/v1/order", params)
 
     def _place_limit_order(self, symbol: str, side: str, quantity: float, price: float) -> Dict[str, Any]:
-        """Places a LIMIT order with GTC (Good 'Til Canceled) time-in-force."""
         params = {
             "symbol": symbol,
             "side": side,

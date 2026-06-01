@@ -3,12 +3,10 @@ from typing import Optional, Dict, Any
 
 
 class ValidationError(ValueError):
-    """Custom exception for input validation failures."""
     pass
 
 
 def validate_symbol(symbol: str) -> str:
-    """Validates and normalizes the trading symbol to uppercase alphanumeric."""
     if not symbol:
         raise ValidationError("Symbol cannot be empty.")
 
@@ -23,7 +21,6 @@ def validate_symbol(symbol: str) -> str:
 
 
 def validate_side(side: str) -> str:
-    """Validates and normalizes the order side. Must be 'BUY' or 'SELL'."""
     if not side:
         raise ValidationError("Order side cannot be empty.")
 
@@ -34,7 +31,6 @@ def validate_side(side: str) -> str:
 
 
 def validate_order_type(order_type: str) -> str:
-    """Validates and normalizes the order type. Must be 'MARKET', 'LIMIT', or 'STOP_MARKET'."""
     if not order_type:
         raise ValidationError("Order type cannot be empty.")
 
@@ -49,7 +45,6 @@ def validate_order_type(order_type: str) -> str:
 
 
 def validate_quantity(quantity: Any) -> float:
-    """Validates and converts quantity to a positive float."""
     try:
         val = float(quantity)
     except (ValueError, TypeError):
@@ -61,7 +56,6 @@ def validate_quantity(quantity: Any) -> float:
 
 
 def validate_price(price: Any, order_type: str) -> Optional[float]:
-    """Validates price. Required and positive for LIMIT; must be absent for other types."""
     if order_type.upper() == "LIMIT":
         if price is None:
             raise ValidationError("Price is required for LIMIT orders.")
@@ -80,7 +74,6 @@ def validate_price(price: Any, order_type: str) -> Optional[float]:
 
 
 def validate_stop_price(stop_price: Any, order_type: str) -> Optional[float]:
-    """Validates stop price. Required and positive for STOP_MARKET; must be absent for other types."""
     if order_type.upper() == "STOP_MARKET":
         if stop_price is None:
             raise ValidationError("Stop price (stopPrice) is required for STOP_MARKET orders.")
@@ -106,7 +99,6 @@ def validate_order_inputs(
     price: Any = None,
     stop_price: Any = None
 ) -> Dict[str, Any]:
-    """Validates all order inputs and returns a dictionary of normalized values."""
     return {
         "symbol": validate_symbol(symbol),
         "side": validate_side(side),

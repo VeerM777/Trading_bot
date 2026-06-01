@@ -4,7 +4,7 @@ A robust, enterprise-grade, and beautifully-styled Python application designed t
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 1. **Direct REST Client**: Implements direct REST calls using `requests` with custom SHA256 HMAC request signing and query generation, showing complete control over the HTTP request lifecycle.
 2. **Dual-Mode CLI UX (Bonus)**:
@@ -17,7 +17,7 @@ A robust, enterprise-grade, and beautifully-styled Python application designed t
 
 ---
 
-## 📁 Project Architecture
+##  Project Architecture
 
 The codebase follows professional software engineering patterns with a clear separation of concerns:
 
@@ -39,7 +39,7 @@ trading_bot/
 
 ---
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
 ### 1. Prerequisites
 Ensure you have **Python 3.8+** installed. You can check your version by running:
@@ -71,7 +71,7 @@ To execute orders on the live **Binance Futures Testnet**:
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
 ### Mode A: Beautiful Interactive Wizard (Recommended)
 Run the script without any parameters to launch the wizard:
@@ -120,7 +120,7 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001 --mock 
 
 ---
 
-## 📝 Output and Logging
+##  Output and Logging
 
 Every execution generates dual output streams:
 1. **Interactive Console UI**: Displays high-end structured `rich` tables and execution summary cards (orderId, status, original quantity, executed quantity, average price).
@@ -136,7 +136,7 @@ Every execution generates dual output streams:
 
 ---
 
-## 🧠 Assumptions & Design Decisions
+##  Assumptions & Design Decisions
 
 - **USDT-M Futures Focus**: The bot targets USDT-Margined perpetual contracts using `/fapi/v1` REST endpoints.
 - **Time in Force (GTC)**: For `LIMIT` orders, `timeInForce="GTC"` (Good 'Til Canceled) is automatically injected since it is mandatory for placing normal limit orders on Binance Futures.
