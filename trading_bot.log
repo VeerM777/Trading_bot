@@ -1,0 +1,163 @@
+[2026-06-01 16:26:04,028] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:06,059] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:06,059] [WARNING] [trading_bot] [client.py:41] - [bold yellow]⚠️ Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 16:26:06,280] [INFO] [trading_bot] [cli.py:305] - Executing Order via Command Line...
+[2026-06-01 16:26:32,398] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:33,827] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:33,830] [WARNING] [trading_bot] [client.py:41] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 16:26:33,841] [INFO] [trading_bot] [cli.py:326] - Executing Order via Command Line...
+[2026-06-01 16:26:33,851] [INFO] [trading_bot] [orders.py:24] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.005  
+[2026-06-01 16:26:33,853] [INFO] [trading_bot] [client.py:156] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 16:26:33,857] [INFO] [trading_bot] [client.py:157] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.005}[/cyan]
+[2026-06-01 16:26:34,162] [INFO] [trading_bot] [client.py:197] - [green][MOCK API Response] Order Created | ID: 1780311394162[/green]
+[2026-06-01 16:26:45,637] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:47,035] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:26:47,036] [WARNING] [trading_bot] [client.py:41] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 16:26:47,047] [INFO] [trading_bot] [cli.py:326] - Executing Order via Command Line...
+[2026-06-01 16:26:47,058] [INFO] [trading_bot] [orders.py:24] - Preparing LIMIT BUY order for BTCUSDT | Qty: 0.005 | Price: 65000.0 
+[2026-06-01 16:26:47,062] [INFO] [trading_bot] [client.py:156] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 16:26:47,065] [INFO] [trading_bot] [client.py:157] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.005, 'price': 65000.0, 'timeInForce': 'GTC'}[/cyan]
+[2026-06-01 16:26:47,369] [INFO] [trading_bot] [client.py:197] - [green][MOCK API Response] Order Created | ID: 1780311407369[/green]
+[2026-06-01 16:27:01,648] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:27:03,079] [DEBUG] [trading_bot] [logging_config.py:51] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:27:03,080] [WARNING] [trading_bot] [client.py:41] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 16:27:03,092] [INFO] [trading_bot] [cli.py:326] - Executing Order via Command Line...
+[2026-06-01 16:27:03,103] [INFO] [trading_bot] [orders.py:24] - Preparing STOP_MARKET SELL order for BTCUSDT | Qty: 0.002  | Stop Price: 64000.0
+[2026-06-01 16:27:03,105] [INFO] [trading_bot] [client.py:156] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 16:27:03,109] [INFO] [trading_bot] [client.py:157] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.002, 'stopPrice': 64000.0}[/cyan]
+[2026-06-01 16:27:03,413] [INFO] [trading_bot] [client.py:197] - [green][MOCK API Response] Order Created | ID: 1780311423413[/green]
+[2026-06-01 16:30:57,414] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:30:58,939] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 16:30:58,941] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 16:30:58,952] [INFO] [trading_bot] [cli.py:273] - Executing Order via Command Line...
+[2026-06-01 16:30:58,963] [INFO] [trading_bot] [orders.py:22] - Preparing LIMIT SELL order for ETHUSDT | Qty: 0.1 | Price: 3500.0 
+[2026-06-01 16:30:58,966] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 16:30:58,969] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 3500.0, 'timeInForce': 'GTC'}[/cyan]
+[2026-06-01 16:30:59,273] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780311659273[/green]
+[2026-06-01 17:18:30,726] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:18:31,488] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:18:31,489] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 17:18:31,501] [INFO] [trading_bot] [cli.py:265] - Executing Order via Command Line...
+[2026-06-01 17:18:31,511] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.005  
+[2026-06-01 17:18:31,514] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 17:18:31,517] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.005}[/cyan]
+[2026-06-01 17:18:31,820] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780314511820[/green]
+[2026-06-01 17:18:50,034] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:18:50,685] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:18:50,686] [WARNING] [trading_bot] [cli.py:243] - No API credentials found. Falling back to MOCK mode.
+[2026-06-01 17:18:50,699] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 17:18:50,702] [INFO] [trading_bot] [cli.py:265] - Executing Order via Command Line...
+[2026-06-01 17:18:50,711] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:18:50,714] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 17:18:50,717] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}[/cyan]
+[2026-06-01 17:18:51,021] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780314531021[/green]
+[2026-06-01 17:21:10,635] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:21:12,103] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:21:12,103] [WARNING] [trading_bot] [cli.py:244] - No API credentials found. Falling back to MOCK mode.
+[2026-06-01 17:21:12,115] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 17:21:12,118] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:21:12,127] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:21:12,130] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 17:21:12,133] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}[/cyan]
+[2026-06-01 17:21:12,437] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780314672437[/green]
+[2026-06-01 17:22:02,540] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:22:03,891] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:22:03,892] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:22:04,140] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 123.09ms, Offset: 2014.47ms
+[2026-06-01 17:22:04,144] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:22:04,162] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:22:04,167] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1780314726180, 'recvWindow': 6000, 'signature': '******951e1a'}
+[2026-06-01 17:22:04,322] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 401 | Body: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+[2026-06-01 17:22:04,323] [ERROR] [trading_bot] [client.py:137] - Binance API error -2015: Invalid API-key, IP, or permissions for action
+[2026-06-01 17:22:04,327] [ERROR] [trading_bot] [orders.py:38] - Order placement failed: Binance API Error -2015: Invalid API-key, IP, or permissions for action (HTTP 401)
+[2026-06-01 17:22:49,960] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:22:50,701] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:22:50,702] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:22:51,337] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 317.54ms, Offset: 2211.17ms
+[2026-06-01 17:22:51,340] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:22:51,358] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:22:51,361] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1780314773572, 'recvWindow': 6000, 'signature': '******866813'}
+[2026-06-01 17:22:51,514] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 401 | Body: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+[2026-06-01 17:22:51,515] [ERROR] [trading_bot] [client.py:137] - Binance API error -2015: Invalid API-key, IP, or permissions for action
+[2026-06-01 17:22:51,537] [ERROR] [trading_bot] [orders.py:38] - Order placement failed: Binance API Error -2015: Invalid API-key, IP, or permissions for action (HTTP 401)
+[2026-06-01 17:23:55,403] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:23:56,102] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:23:56,103] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:23:56,715] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 306.05ms, Offset: 2201.16ms
+[2026-06-01 17:23:56,719] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:23:56,738] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:23:56,742] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1780314838942, 'recvWindow': 6000, 'signature': '******b4d5a6'}
+[2026-06-01 17:23:56,895] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 401 | Body: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+[2026-06-01 17:23:56,895] [ERROR] [trading_bot] [client.py:137] - Binance API error -2015: Invalid API-key, IP, or permissions for action
+[2026-06-01 17:23:56,898] [ERROR] [trading_bot] [orders.py:38] - Order placement failed: Binance API Error -2015: Invalid API-key, IP, or permissions for action (HTTP 401)
+[2026-06-01 17:31:41,989] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:31:43,525] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:31:43,525] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:31:43,748] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 110.88ms, Offset: 2010.70ms
+[2026-06-01 17:31:43,752] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:31:43,767] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:31:43,770] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1780315305781, 'recvWindow': 6000, 'signature': '******eb25dc'}
+[2026-06-01 17:31:43,939] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 200 | Body: {"orderId":13693560778,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"uYTjCCO49JaPqBBqNcvHvm","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780315305828}
+[2026-06-01 17:32:00,059] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:32:00,919] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:32:00,920] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:32:01,638] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 359.03ms, Offset: 2255.69ms
+[2026-06-01 17:32:01,640] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:32:01,666] [INFO] [trading_bot] [orders.py:22] - Preparing LIMIT BUY order for BTCUSDT | Qty: 0.001 | Price: 60000.0 
+[2026-06-01 17:32:01,669] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 60000.0, 'timeInForce': 'GTC', 'timestamp': 1780315323925, 'recvWindow': 6000, 'signature': '******e8f908'}
+[2026-06-01 17:32:01,823] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 200 | Body: {"orderId":13693579129,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"OhDFUnTlWBP2IkhjmDNz51","price":"60000.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780315323722}
+[2026-06-01 17:33:33,489] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:33:34,217] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:33:34,218] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:33:34,829] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 305.12ms, Offset: 2206.57ms
+[2026-06-01 17:33:34,831] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:33:34,849] [INFO] [trading_bot] [orders.py:22] - Preparing STOP_MARKET SELL order for BTCUSDT | Qty: 0.001  | Stop Price: 63000.0
+[2026-06-01 17:33:34,853] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 63000.0, 'timestamp': 1780315417060, 'recvWindow': 6000, 'signature': '******86854c'}
+[2026-06-01 17:33:35,008] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 400 | Body: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+[2026-06-01 17:33:35,009] [ERROR] [trading_bot] [client.py:137] - Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+[2026-06-01 17:33:35,012] [ERROR] [trading_bot] [orders.py:38] - Order placement failed: Binance API Error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead. (HTTP 400)
+[2026-06-01 17:35:35,513] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:35:36,812] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:35:36,813] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:35:37,061] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 123.78ms, Offset: 2020.41ms
+[2026-06-01 17:35:37,064] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:35:37,079] [INFO] [trading_bot] [orders.py:22] - Preparing STOP_MARKET SELL order for BTCUSDT | Qty: 0.001  | Stop Price: 63000.0
+[2026-06-01 17:35:37,083] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.001, 'stopPrice': 63000.0, 'price': 63000.0, 'timeInForce': 'GTC', 'timestamp': 1780315539103, 'recvWindow': 6000, 'signature': '******a9a2f3'}
+[2026-06-01 17:35:37,244] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 400 | Body: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+[2026-06-01 17:35:37,245] [ERROR] [trading_bot] [client.py:137] - Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+[2026-06-01 17:35:37,248] [ERROR] [trading_bot] [orders.py:38] - Order placement failed: Binance API Error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead. (HTTP 400)
+[2026-06-01 17:37:21,124] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:21,815] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:21,816] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:37:22,494] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 338.38ms, Offset: 2241.84ms
+[2026-06-01 17:37:22,496] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:37:22,513] [INFO] [trading_bot] [orders.py:22] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:37:22,516] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1780315644758, 'recvWindow': 6000, 'signature': '******f24cf0'}
+[2026-06-01 17:37:22,665] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 200 | Body: {"orderId":13693963996,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"990ApEAEYLf8aEIqYeQ749","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1780315644569}
+[2026-06-01 17:37:44,032] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:45,312] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:45,313] [DEBUG] [trading_bot] [client.py:66] - Syncing time with Binance server: https://testnet.binancefuture.com/fapi/v1/time
+[2026-06-01 17:37:45,553] [DEBUG] [trading_bot] [client.py:76] - Time synchronized. RTT: 119.79ms, Offset: 2024.05ms
+[2026-06-01 17:37:45,556] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:37:45,572] [INFO] [trading_bot] [orders.py:27] - Preparing STOP_MARKET SELL order for BTCUSDT | Qty: 0.001  | Stop Price: 63000.0
+[2026-06-01 17:37:45,575] [DEBUG] [trading_bot] [client.py:114] - API Request | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 63000.0, 'workingType': 'CONTRACT_PRICE', 'timestamp': 1780315667599, 'recvWindow': 6000, 'signature': '******847736'}
+[2026-06-01 17:37:45,725] [DEBUG] [trading_bot] [client.py:127] - API Response | Status: 400 | Body: {"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+[2026-06-01 17:37:45,726] [ERROR] [trading_bot] [client.py:137] - Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+[2026-06-01 17:37:45,729] [ERROR] [trading_bot] [orders.py:43] - Order placement failed: Binance API Error -4120: STOP_MARKET orders are not supported on the Binance Futures Testnet (/fapi/v1/order). This is a testnet-only restriction — the same order works on the live exchange. Use --mock to simulate this order type locally. (HTTP 400)
+[2026-06-01 17:37:54,970] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:56,248] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:37:56,250] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 17:37:56,261] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:37:56,271] [INFO] [trading_bot] [orders.py:27] - Preparing STOP_MARKET SELL order for BTCUSDT | Qty: 0.001  | Stop Price: 63000.0
+[2026-06-01 17:37:56,274] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 17:37:56,277] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 63000.0, 'workingType': 'CONTRACT_PRICE'}[/cyan]
+[2026-06-01 17:37:56,581] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780315676581[/green]
+[2026-06-01 17:39:43,162] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:39:43,872] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log
+[2026-06-01 17:39:43,885] [WARNING] [trading_bot] [client.py:44] - [bold yellow][!] Running in MOCK Mode. Orders will not be placed on real Testnet.[/bold yellow]
+[2026-06-01 17:39:43,890] [INFO] [trading_bot] [cli.py:266] - Executing Order via Command Line...
+[2026-06-01 17:39:43,897] [INFO] [trading_bot] [orders.py:27] - Preparing MARKET BUY order for BTCUSDT | Qty: 0.001  
+[2026-06-01 17:39:43,900] [INFO] [trading_bot] [client.py:145] - [cyan][MOCK API Request] POST https://testnet.binancefuture.com/fapi/v1/order[/cyan]
+[2026-06-01 17:39:43,903] [INFO] [trading_bot] [client.py:146] - [cyan]Parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}[/cyan]
+[2026-06-01 17:39:44,209] [INFO] [trading_bot] [client.py:182] - [green][MOCK API Response] Order Created | ID: 1780315784209[/green]
+[2026-06-01 18:00:52,640] [DEBUG] [trading_bot] [logging_config.py:44] - Logging initialized. Log file path: D:\trading_bot\trading_bot.log

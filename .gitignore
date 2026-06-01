@@ -1,0 +1,41 @@
+# ─── Credentials (NEVER commit these) ────────────────────────────────────────
+.env
+*.env
+.env.*
+!.env.example
+
+# ─── Python artifacts ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ─── IDE and OS files ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Debug / scratch scripts (added during development, not part of deliverables) ──
+diagnose.py
+
+# ─── Testing / coverage ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
